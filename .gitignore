@@ -10,6 +10,7 @@ __pycache__/
 _freeze/
 _publish/
 .quarto/
+_site/*
 
 data/*.csv
 data/*.tsv
@@ -34,3 +35,4 @@ Pipfile.lock
 
 .DS_Store
 Thumbs.db
+/.quarto/

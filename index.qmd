@@ -5,7 +5,7 @@ author:
   - name: "Reilly Rodriguez Spencer"
     affiliations:
       - name: "College of Information Science, University of Arizona"
-description: "Using unsupervised machine learning and statistical techniques to detect anomalies in credit card transaction data."
+description: "Proposal for using unsupervised machine learning and statistical techniques to detect anomalies in credit card transaction data."
 format:
    html:
     code-tools: true

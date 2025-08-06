@@ -5,7 +5,7 @@ author:
   - name: "Reilly Rodriguez Spencer"
     affiliations:
       - name: "College of Information Science, University of Arizona"
-description: "Using unsupervised machine learning and statistical techniques to detect anomalies in credit card transaction data."
+description: "Proposal for using unsupervised machine learning and statistical techniques to detect anomalies in credit card transaction data."
 format:
   html:
     code-tools: true
@@ -21,7 +21,7 @@ jupyter: python3
 
 ```{python}
 #| label: load-pkgs
-#| message: false
+#| echo: false
 import pandas as pd
 import numpy as np
 ```
@@ -30,20 +30,20 @@ import numpy as np
 
 ```{python}
 #| label: load-dataset
-#| message: false
+#| echo: false
 df = pd.read_csv("data/creditcard.csv")
 df_shape = df.shape
 df_preview = df.head()
 ```
 
 The dataset used is the Credit Card Fraud Detection dataset from Kaggle, which contains r df_shape[0] rows and r df_shape[1] columns of anonymized transaction data from European cardholders in 2013.
-I chose this dataset because it is extremely imbalanced with less than 0.2% fraudulent cases. This makes it an excellent candidate for anomaly detection techniques.
+I chose this dataset because it is highly imbalanced with 0.172% of transactions being fraudulent cases. This makes it an excellent candidate for anomaly detection techniques.
 
 
 ## Questions
 
-1. Can unsupervised models like Isolation Forest and Local Outlier Factor identify fraudulent transactions without seeing labels?
-2. How well do basic methods like k-NN and z-scores work compared to more advanced models like Isolation Forest when trying to find unusual transactions?
+1. 
+2. 
 
 ## Analysis plan
 
