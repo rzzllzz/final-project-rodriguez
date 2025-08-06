@@ -1,11 +1,11 @@
 ---
-title: "Project Title"
+title: "Anomaly Detection: Credit Card Fraud Detection"
 subtitle: "INFO 523 - Final Project"
 author: 
-  - name: "Team name - Team member 1, Team member 2,..."
+  - name: "Reilly Rodriguez Spencer"
     affiliations:
       - name: "College of Information Science, University of Arizona"
-description: "Project description"
+description: "Using unsupervised machine learning and statistical techniques to detect anomalies in credit card transaction data."
 format:
    html:
     code-tools: true
