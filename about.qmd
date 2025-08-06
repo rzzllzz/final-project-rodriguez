@@ -1,0 +1,10 @@
+---
+title: "About"
+format: html
+editor: visual
+jupyter: python3
+---
+
+This project was developed by **Reilly Rodriguez Spencer** For [INFO 523 - Data Mining and Discovery](https://datamineaz.org/) at the University of Arizona, taught by Dr. Greg Chism. The team is comprised of the following team members.
+
+-   Reilly Rodriguez Spencer: Third-year MS in Data Science major. 
