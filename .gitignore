@@ -12,7 +12,6 @@ _publish/
 .quarto/
 _site/*
 
-data/*.csv
 data/*.tsv
 data/*.xlsx
 data/*.parquet
