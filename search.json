@@ -25,7 +25,7 @@
     "href": "proposal.html#questions",
     "title": "Detecting Anomalies in Credit Card Transactions",
     "section": "Questions",
-    "text": "Questions\n\nHow well do unsupervised ensemble-based models detect fraudulent transactions when labels are withheld during training?\nHow do distance-based and statistical approaches to outlier detection—such as k-NN and z-score methods—compare to ensemble-based methods in identifying rare but meaningful anomalies?"
+    "text": "Questions\n\nHow well do unsupervised ensemble-based models detect fraudulent transactions when labels are withheld during training?\nHow do distance-based and statistical approaches to outlier detection compare to ensemble-based methods in identifying rare but meaningful anomalies?"
   },
   {
     "objectID": "proposal.html#analysis-plan",
