@@ -43,7 +43,7 @@ Although the dataset includes labeled anomalies, I am approaching this as an uns
 ## Questions
 
 1.  How well do unsupervised ensemble-based models detect fraudulent transactions when labels are withheld during training?
-2.  How do distance-based and statistical approaches to outlier detection—such as k-NN and z-score methods—compare to ensemble-based methods in identifying rare but meaningful anomalies?
+2.  How do distance-based and statistical approaches to outlier detection compare to ensemble-based methods in identifying rare but meaningful anomalies?
 
 ## Analysis plan
 
