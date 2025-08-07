@@ -32,7 +32,7 @@
     "href": "proposal.html#analysis-plan",
     "title": "Detecting Anomalies in Credit Card Transactions",
     "section": "Analysis plan",
-    "text": "Analysis plan\n\nData Preprocessing (August 6–7)\n\nLoad and clean the dataset; scale relevant features.\n\nModeling: Unsupervised Learning (August 8–10)\n\nImplement anomaly detection methods.\n\nEvaluation (August 11–13)\n\nAssess model performance using the fraud labels for metrics like ROC AUC and precision-recall.\n\nVisualization (August 13–16)\n\nCreate performance plots and visual summaries of detected anomalies.\n\nPresentation Prep (August 17–19)\n\nFinalize presentation materials and write-up of results."
+    "text": "Analysis plan\n\nData Preprocessing (August 6–7)\n\nLoad and clean the dataset; scale relevant features.\n\nModeling: Unsupervised Learning (August 8–10)\n\nImplement anomaly detection methods.\n\nEvaluation (August 11–13)\n\nAssess model performance.\n\nVisualization (August 13–16)\n\nCreate performance plots and visual summaries of detected anomalies.\n\nPresentation Prep (August 17–19)\n\nFinalize presentation materials and write-up of results."
   },
   {
     "objectID": "presentation.html#quarto",
