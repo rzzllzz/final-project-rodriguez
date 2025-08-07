@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Anomaly Detection: Credit Card Fraud Detection"
 subtitle: "Proposal"
 author: 
@@ -6,6 +7,15 @@ author:
     affiliations:
       - name: "College of Information Science, University of Arizona"
 description: "Proposal for using unsupervised machine learning and statistical techniques to detect anomalies in credit card transaction data."
+=======
+title: "Proposal title"
+subtitle: "Proposal"
+author: 
+  - name: "Team Name - Team member 1, Team member 2,..."
+    affiliations:
+      - name: "College of Information Science, University of Arizona"
+description: "Project description"
+>>>>>>> upstream/main
 format:
   html:
     code-tools: true
@@ -21,8 +31,12 @@ jupyter: python3
 
 ```{python}
 #| label: load-pkgs
+<<<<<<< HEAD
 #| echo: false
 import pandas as pd
+=======
+#| message: false
+>>>>>>> upstream/main
 import numpy as np
 ```
 
@@ -30,6 +44,7 @@ import numpy as np
 
 ```{python}
 #| label: load-dataset
+<<<<<<< HEAD
 #| echo: false
 df = pd.read_csv("data/creditcard.csv")
 df_shape = df.shape
@@ -57,3 +72,19 @@ I chose this dataset because it is highly imbalanced with 0.172% of transactions
     - August 13 to August 16
 - Presentation prep 
     - August 17 to August 19
+=======
+#| message: false
+```
+
+A brief description of your dataset including its provenance, dimensions, etc. as well as the reason why you chose this dataset.
+
+Make sure to load the data and use inline code for some of this information.
+
+## Questions
+
+The two questions you want to answer.
+
+## Analysis plan
+
+-   A plan for answering each of the questions including the variables involved, variables to be created (if any), external data to be merged in (if any).
+>>>>>>> upstream/main
