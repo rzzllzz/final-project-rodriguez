@@ -4,21 +4,21 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "This project was developed by Reilly Rodriguez Spencer For INFO 523 - Data Mining and Discovery at the University of Arizona, taught by Dr. Greg Chism. The team is comprised of the following team members.\n\nReilly Rodriguez Spencer: Third-year MS in Data Science major."
+    "text": "This project was developed by Reilly Rodriguez Spencer For INFO 523 - Data Mining and Discovery at the University of Arizona, taught by Dr. Greg Chism. The team is comprised of the following team members.\n\nReilly Rodriguez Spencer: MS in Data Science major."
   },
   {
     "objectID": "proposal.html",
     "href": "proposal.html",
     "title": "Detecting Anomalies in Credit Card Transactions",
     "section": "",
-    "text": "This project uses the Credit Card Fraud Detection dataset, containing transactions made by European cardholders over two days in 2013. The dataset includes 284,807 transactions, with only 492 labeled as fraudulent (Class = 1), making it highly imbalanced. Features are anonymized and PCA-transformed for confidentiality, with the exception of Time, Amount, and Class.\nAlthough the dataset includes labeled anomalies, I am approaching this as an unsupervised anomaly detection task, simulating a real-world scenario where fraudulent examples are not labeled during model training. Labels are withheld during training and used only for model evaluation."
+    "text": "This project uses the Credit Card Fraud Detection dataset, containing transactions made by European cardholders over two days in 2013. The dataset includes 284,807 transactions, with only 492 labeled as fraudulent (Class = 1), making it highly imbalanced.\nAlthough the dataset includes labeled anomalies, I am approaching this as an unsupervised anomaly detection task, simulating a real-world scenario where fraudulent examples are not labeled during model training. Labels are withheld during training and used only for model evaluation."
   },
   {
     "objectID": "proposal.html#dataset",
     "href": "proposal.html#dataset",
     "title": "Detecting Anomalies in Credit Card Transactions",
     "section": "",
-    "text": "This project uses the Credit Card Fraud Detection dataset, containing transactions made by European cardholders over two days in 2013. The dataset includes 284,807 transactions, with only 492 labeled as fraudulent (Class = 1), making it highly imbalanced. Features are anonymized and PCA-transformed for confidentiality, with the exception of Time, Amount, and Class.\nAlthough the dataset includes labeled anomalies, I am approaching this as an unsupervised anomaly detection task, simulating a real-world scenario where fraudulent examples are not labeled during model training. Labels are withheld during training and used only for model evaluation."
+    "text": "This project uses the Credit Card Fraud Detection dataset, containing transactions made by European cardholders over two days in 2013. The dataset includes 284,807 transactions, with only 492 labeled as fraudulent (Class = 1), making it highly imbalanced.\nAlthough the dataset includes labeled anomalies, I am approaching this as an unsupervised anomaly detection task, simulating a real-world scenario where fraudulent examples are not labeled during model training. Labels are withheld during training and used only for model evaluation."
   },
   {
     "objectID": "proposal.html#questions",
