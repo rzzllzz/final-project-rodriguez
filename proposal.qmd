@@ -1,11 +1,11 @@
 ---
-title: "Anomaly Detection: Credit Card Fraud Detection"
+title: "Detecting Anomalies in Credit Card Transactions"
 subtitle: "Proposal"
 author: 
   - name: "Reilly Rodriguez Spencer"
     affiliations:
       - name: "College of Information Science, University of Arizona"
-description: "Proposal for using unsupervised machine learning and statistical techniques to detect anomalies in credit card transaction data."
+description: "Exploring unsupervised anomaly detection methods on imbalanced financial data"
 format:
   html:
     code-tools: true
@@ -36,24 +36,33 @@ df_shape = df.shape
 df_preview = df.head()
 ```
 
-The dataset used is the Credit Card Fraud Detection dataset from Kaggle, which contains r df_shape[0] rows and r df_shape[1] columns of anonymized transaction data from European cardholders in 2013.
-I chose this dataset because it is highly imbalanced with 0.172% of transactions being fraudulent cases. This makes it an excellent candidate for anomaly detection techniques.
+This project uses the Credit Card Fraud Detection dataset, containing transactions made by European cardholders over two days in 2013. The dataset includes 284,807 transactions, with only 492 labeled as fraudulent (Class = 1), making it highly imbalanced. Features are anonymized and PCA-transformed for confidentiality, with the exception of Time, Amount, and Class.
 
+Although the dataset includes labeled anomalies, I am approaching this as an unsupervised anomaly detection task, simulating a real-world scenario where fraudulent examples are not labeled during model training. Labels are withheld during training and used only for model evaluation.
 
 ## Questions
 
-1. 
-2. 
+1.  How well do unsupervised ensemble-based models detect fraudulent transactions when labels are withheld during training?
+2.  How do distance-based and statistical approaches to outlier detection—such as k-NN and z-score methods—compare to ensemble-based methods in identifying rare but meaningful anomalies?
 
 ## Analysis plan
 
-- Data Preprocessing
-    - August 6 to August 7
-- Modeling: Unsupervised learning
-    - August 8 to August 10
-- Evaluation
-    - August 11 to August 13
-- Visualization
-    - August 13 to August 16
-- Presentation prep 
-    - August 17 to August 19
+-   Data Preprocessing (August 6–7)
+
+    -   Load and clean the dataset; scale relevant features.
+
+-   Modeling: Unsupervised Learning (August 8–10)
+
+    -   Implement anomaly detection methods.
+
+-   Evaluation (August 11–13)
+
+    -   Assess model performance using the fraud labels for metrics like ROC AUC and precision-recall.
+
+-   Visualization (August 13–16)
+
+    -   Create performance plots and visual summaries of detected anomalies.
+
+-   Presentation Prep (August 17–19)
+
+    -   Finalize presentation materials and write-up of results.

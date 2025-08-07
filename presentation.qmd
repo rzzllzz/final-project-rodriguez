@@ -1,5 +1,5 @@
 ---
-title: "Anomaly Detection: Credit Card Fraud Detection"
+title: "Detecting Anomalies in Credit Card Transactions"
 subtitle: "INFO 523 - Summer 2025 - Final Project"
 author: "Reilly Rodriguez Spencer"
 title-slide-attributes:
