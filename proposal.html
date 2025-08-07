@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Reilly Rodriguez Spencer">
-<meta name="description" content="Proposal for using unsupervised machine learning and statistical techniques to detect anomalies in credit card transaction data.">
+<meta name="description" content="Exploring unsupervised anomaly detection methods on imbalanced financial data">
 
-<title>Anomaly Detection: Credit Card Fraud Detection – Project Title</title>
+<title>Detecting Anomalies in Credit Card Transactions – Project Title</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -4040,7 +4040,7 @@ vertical-align: -.125em;
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/rzzllzz/final-project-rodriguez"> <i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/INFO-523-SU25/final-project-rodriguez"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -4073,13 +4073,13 @@ vertical-align: -.125em;
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Anomaly Detection: Credit Card Fraud Detection</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title">Detecting Anomalies in Credit Card Transactions</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 <p class="subtitle lead">Proposal</p>
 </div>
 
 <div>
   <div class="description">
-    Proposal for using unsupervised machine learning and statistical techniques to detect anomalies in credit card transaction data.
+    Exploring unsupervised anomaly detection methods on imbalanced financial data
   </div>
 </div>
 
@@ -4111,37 +4111,38 @@ vertical-align: -.125em;
 
 <section id="dataset" class="level2">
 <h2 class="anchored" data-anchor-id="dataset">Dataset</h2>
-<p>The dataset used is the Credit Card Fraud Detection dataset from Kaggle, which contains r df_shape[0] rows and r df_shape[1] columns of anonymized transaction data from European cardholders in 2013. I chose this dataset because it is highly imbalanced with 0.172% of transactions being fraudulent cases. This makes it an excellent candidate for anomaly detection techniques.</p>
+<p>This project uses the Credit Card Fraud Detection dataset, containing transactions made by European cardholders over two days in 2013. The dataset includes 284,807 transactions, with only 492 labeled as fraudulent (Class = 1), making it highly imbalanced. Features are anonymized and PCA-transformed for confidentiality, with the exception of Time, Amount, and Class.</p>
+<p>Although the dataset includes labeled anomalies, I am approaching this as an unsupervised anomaly detection task, simulating a real-world scenario where fraudulent examples are not labeled during model training. Labels are withheld during training and used only for model evaluation.</p>
 </section>
 <section id="questions" class="level2">
 <h2 class="anchored" data-anchor-id="questions">Questions</h2>
 <ol type="1">
-<li></li>
-<li></li>
+<li>How well do unsupervised ensemble-based models detect fraudulent transactions when labels are withheld during training?</li>
+<li>How do distance-based and statistical approaches to outlier detection—such as k-NN and z-score methods—compare to ensemble-based methods in identifying rare but meaningful anomalies?</li>
 </ol>
 </section>
 <section id="analysis-plan" class="level2">
 <h2 class="anchored" data-anchor-id="analysis-plan">Analysis plan</h2>
 <ul>
-<li>Data Preprocessing
+<li><p>Data Preprocessing (August 6–7)</p>
 <ul>
-<li>August 6 to August 7</li>
+<li>Load and clean the dataset; scale relevant features.</li>
 </ul></li>
-<li>Modeling: Unsupervised learning
+<li><p>Modeling: Unsupervised Learning (August 8–10)</p>
 <ul>
-<li>August 8 to August 10</li>
+<li>Implement anomaly detection methods.</li>
 </ul></li>
-<li>Evaluation
+<li><p>Evaluation (August 11–13)</p>
 <ul>
-<li>August 11 to August 13</li>
+<li>Assess model performance using the fraud labels for metrics like ROC AUC and precision-recall.</li>
 </ul></li>
-<li>Visualization
+<li><p>Visualization (August 13–16)</p>
 <ul>
-<li>August 13 to August 16</li>
+<li>Create performance plots and visual summaries of detected anomalies.</li>
 </ul></li>
-<li>Presentation prep
+<li><p>Presentation Prep (August 17–19)</p>
 <ul>
-<li>August 17 to August 19</li>
+<li>Finalize presentation materials and write-up of results.</li>
 </ul></li>
 </ul>
 
@@ -4654,13 +4655,13 @@ vertical-align: -.125em;
   });
   </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class>
 <div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="an">title:</span><span class="co"> &quot;Anomaly Detection: Credit Card Fraud Detection&quot;</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="an">title:</span><span class="co"> &quot;Detecting Anomalies in Credit Card Transactions&quot;</span></span>
 <span id="cb1-3"><a href="#cb1-3"></a><span class="an">subtitle:</span><span class="co"> &quot;Proposal&quot;</span></span>
 <span id="cb1-4"><a href="#cb1-4"></a><span class="an">author:</span><span class="co"> </span></span>
 <span id="cb1-5"><a href="#cb1-5"></a><span class="co">  - name: &quot;Reilly Rodriguez Spencer&quot;</span></span>
 <span id="cb1-6"><a href="#cb1-6"></a><span class="co">    affiliations:</span></span>
 <span id="cb1-7"><a href="#cb1-7"></a><span class="co">      - name: &quot;College of Information Science, University of Arizona&quot;</span></span>
-<span id="cb1-8"><a href="#cb1-8"></a><span class="an">description:</span><span class="co"> &quot;Proposal for using unsupervised machine learning and statistical techniques to detect anomalies in credit card transaction data.&quot;</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a><span class="an">description:</span><span class="co"> &quot;Exploring unsupervised anomaly detection methods on imbalanced financial data&quot;</span></span>
 <span id="cb1-9"><a href="#cb1-9"></a><span class="an">format:</span></span>
 <span id="cb1-10"><a href="#cb1-10"></a><span class="co">  html:</span></span>
 <span id="cb1-11"><a href="#cb1-11"></a><span class="co">    code-tools: true</span></span>
@@ -4691,27 +4692,36 @@ vertical-align: -.125em;
 <span id="cb1-40"><a href="#cb1-40"></a>df_preview <span class="op">=</span> df.head()</span>
 <span id="cb1-41"><a href="#cb1-41"></a><span class="in">```</span></span>
 <span id="cb1-42"><a href="#cb1-42"></a></span>
-<span id="cb1-43"><a href="#cb1-43"></a>The dataset used is the Credit Card Fraud Detection dataset from Kaggle, which contains r df_shape<span class="co">[</span><span class="ot">0</span><span class="co">]</span> rows and r df_shape<span class="co">[</span><span class="ot">1</span><span class="co">]</span> columns of anonymized transaction data from European cardholders in 2013.</span>
-<span id="cb1-44"><a href="#cb1-44"></a>I chose this dataset because it is highly imbalanced with 0.172% of transactions being fraudulent cases. This makes it an excellent candidate for anomaly detection techniques.</span>
-<span id="cb1-45"><a href="#cb1-45"></a></span>
+<span id="cb1-43"><a href="#cb1-43"></a>This project uses the Credit Card Fraud Detection dataset, containing transactions made by European cardholders over two days in 2013. The dataset includes 284,807 transactions, with only 492 labeled as fraudulent (Class = 1), making it highly imbalanced. Features are anonymized and PCA-transformed for confidentiality, with the exception of Time, Amount, and Class.</span>
+<span id="cb1-44"><a href="#cb1-44"></a></span>
+<span id="cb1-45"><a href="#cb1-45"></a>Although the dataset includes labeled anomalies, I am approaching this as an unsupervised anomaly detection task, simulating a real-world scenario where fraudulent examples are not labeled during model training. Labels are withheld during training and used only for model evaluation.</span>
 <span id="cb1-46"><a href="#cb1-46"></a></span>
 <span id="cb1-47"><a href="#cb1-47"></a><span class="fu">## Questions</span></span>
 <span id="cb1-48"><a href="#cb1-48"></a></span>
-<span id="cb1-49"><a href="#cb1-49"></a><span class="ss">1. </span></span>
-<span id="cb1-50"><a href="#cb1-50"></a><span class="ss">2. </span></span>
+<span id="cb1-49"><a href="#cb1-49"></a><span class="ss">1.  </span>How well do unsupervised ensemble-based models detect fraudulent transactions when labels are withheld during training?</span>
+<span id="cb1-50"><a href="#cb1-50"></a><span class="ss">2.  </span>How do distance-based and statistical approaches to outlier detection—such as k-NN and z-score methods—compare to ensemble-based methods in identifying rare but meaningful anomalies?</span>
 <span id="cb1-51"><a href="#cb1-51"></a></span>
 <span id="cb1-52"><a href="#cb1-52"></a><span class="fu">## Analysis plan</span></span>
 <span id="cb1-53"><a href="#cb1-53"></a></span>
-<span id="cb1-54"><a href="#cb1-54"></a><span class="ss">- </span>Data Preprocessing</span>
-<span id="cb1-55"><a href="#cb1-55"></a><span class="ss">    - </span>August 6 to August 7</span>
-<span id="cb1-56"><a href="#cb1-56"></a><span class="ss">- </span>Modeling: Unsupervised learning</span>
-<span id="cb1-57"><a href="#cb1-57"></a><span class="ss">    - </span>August 8 to August 10</span>
-<span id="cb1-58"><a href="#cb1-58"></a><span class="ss">- </span>Evaluation</span>
-<span id="cb1-59"><a href="#cb1-59"></a><span class="ss">    - </span>August 11 to August 13</span>
-<span id="cb1-60"><a href="#cb1-60"></a><span class="ss">- </span>Visualization</span>
-<span id="cb1-61"><a href="#cb1-61"></a><span class="ss">    - </span>August 13 to August 16</span>
-<span id="cb1-62"><a href="#cb1-62"></a><span class="ss">- </span>Presentation prep </span>
-<span id="cb1-63"><a href="#cb1-63"></a><span class="ss">    - </span>August 17 to August 19</span>
+<span id="cb1-54"><a href="#cb1-54"></a><span class="ss">-   </span>Data Preprocessing (August 6–7)</span>
+<span id="cb1-55"><a href="#cb1-55"></a></span>
+<span id="cb1-56"><a href="#cb1-56"></a><span class="ss">    -   </span>Load and clean the dataset; scale relevant features.</span>
+<span id="cb1-57"><a href="#cb1-57"></a></span>
+<span id="cb1-58"><a href="#cb1-58"></a><span class="ss">-   </span>Modeling: Unsupervised Learning (August 8–10)</span>
+<span id="cb1-59"><a href="#cb1-59"></a></span>
+<span id="cb1-60"><a href="#cb1-60"></a><span class="ss">    -   </span>Implement anomaly detection methods.</span>
+<span id="cb1-61"><a href="#cb1-61"></a></span>
+<span id="cb1-62"><a href="#cb1-62"></a><span class="ss">-   </span>Evaluation (August 11–13)</span>
+<span id="cb1-63"><a href="#cb1-63"></a></span>
+<span id="cb1-64"><a href="#cb1-64"></a><span class="ss">    -   </span>Assess model performance using the fraud labels for metrics like ROC AUC and precision-recall.</span>
+<span id="cb1-65"><a href="#cb1-65"></a></span>
+<span id="cb1-66"><a href="#cb1-66"></a><span class="ss">-   </span>Visualization (August 13–16)</span>
+<span id="cb1-67"><a href="#cb1-67"></a></span>
+<span id="cb1-68"><a href="#cb1-68"></a><span class="ss">    -   </span>Create performance plots and visual summaries of detected anomalies.</span>
+<span id="cb1-69"><a href="#cb1-69"></a></span>
+<span id="cb1-70"><a href="#cb1-70"></a><span class="ss">-   </span>Presentation Prep (August 17–19)</span>
+<span id="cb1-71"><a href="#cb1-71"></a></span>
+<span id="cb1-72"><a href="#cb1-72"></a><span class="ss">    -   </span>Finalize presentation materials and write-up of results.</span>
 </code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
