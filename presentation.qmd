@@ -1,13 +1,7 @@
 ---
-<<<<<<< HEAD
 title: "Anomaly Detection: Credit Card Fraud Detection"
 subtitle: "INFO 523 - Summer 2025 - Final Project"
 author: "Reilly Rodriguez Spencer"
-=======
-title: "Project title"
-subtitle: "INFO 523 - Summer 2025 - Final Project"
-author: "Author names"
->>>>>>> upstream/main
 title-slide-attributes:
   data-background-image: images/watercolour_sys02_img34_teacup-ocean.jpg
   data-background-size: stretch
@@ -25,11 +19,7 @@ execute:
 
 ```{python}
 #| label: load-packages
-<<<<<<< HEAD
 #| echo: false
-=======
-#| include: false
->>>>>>> upstream/main
 
 # Load packages here
 import pandas as pd
@@ -39,11 +29,7 @@ import seaborn as sns
 
 ```{python}
 #| label: setup
-<<<<<<< HEAD
 #| echo: false
-=======
-#| include: false
->>>>>>> upstream/main
 #| 
 # Set up plot theme and figure resolution
 sns.set_theme(style="whitegrid")
@@ -57,11 +43,7 @@ plt.rcParams['figure.figsize'] = (6, 6 * 0.618)
 
 ```{python}
 #| label: load-data
-<<<<<<< HEAD
 #| echo: false
-=======
-#| include: false
->>>>>>> upstream/main
 # Load data in Python
 mtcars = sns.load_dataset('mpg').dropna()  # mtcars dataset is similar to the mpg dataset from seaborn
 mtcars['speed'] = mtcars['horsepower'] / mtcars['weight']

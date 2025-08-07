@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 __pycache__/
 *.py[cod]
 *.pyo
@@ -39,11 +38,3 @@ Thumbs.db
 /.quarto/
 
 *.deb
-=======
-.Rproj.user
-.Rhistory
-.RData
-.Ruserdata
-
-/.quarto/
->>>>>>> upstream/main

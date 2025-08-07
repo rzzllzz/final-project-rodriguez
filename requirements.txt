@@ -1,8 +1,5 @@
 jupyter
 nbformat
-<<<<<<< HEAD
 pandas
 matplotlib
 statsmodels
-=======
->>>>>>> upstream/main
