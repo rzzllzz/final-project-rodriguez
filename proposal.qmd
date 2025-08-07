@@ -57,7 +57,7 @@ Although the dataset includes labeled anomalies, I am approaching this as an uns
 
 -   Evaluation (August 11–13)
 
-    -   Assess model performance using the fraud labels for metrics like ROC AUC and precision-recall.
+    -   Assess model performance.
 
 -   Visualization (August 13–16)
 
