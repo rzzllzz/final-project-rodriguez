@@ -36,3 +36,5 @@ Pipfile.lock
 .DS_Store
 Thumbs.db
 /.quarto/
+
+*.deb
